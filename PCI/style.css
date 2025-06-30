@@ -136,7 +136,7 @@ button[type="submit"]:enabled {
     padding-top: 16px;
   }
   form {
-    padding: 19px 16px 0 16px;
+    padding: 40px 16px 0 16px;
   }
   button[type="submit"] {
     left: 0;
