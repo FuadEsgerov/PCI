@@ -54,5 +54,8 @@ pin2.addEventListener('input', validatePins);
 // Form submit
 document.getElementById('pinForm').addEventListener('submit', function(e) {
   e.preventDefault();
+    window.onbeforeunload = function(evt) {
+    return true;
+ }
   alert('PIN uğurla təyin olundu!');
 });
