@@ -50,7 +50,12 @@ pin2.addEventListener('input', validatePins);
     this.value = this.value.replace(/\D/g, '').slice(0, 4);
   });
 });
-
+function closeCard() {
+  document.querySelector('.credit-card-modal').style.display = 'none';
+  window.onbeforeunload = function(evt) {
+    return true;
+ }
+}
 // Form submit
 document.getElementById('pinForm').addEventListener('submit', function(e) {
   e.preventDefault();
